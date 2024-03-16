@@ -38,12 +38,9 @@ Our workflow is based on Git Flow, with modifications to accommodate our environ
 
 ### Preparing for Release
 
-1. **Tagging Development for Release**
-   - After all features for the release are merged, tag `development` with `start/Release/mm/yy`: 
-     - `git tag -a start/Release/mm/yy -m "Start for release mm/yy"`
 
-2. **Merging into Staging**
-   - Create a pull request from `development` to `staging` with the tag `start/Release/mm/yy`.
+1. **Merging into Staging**
+   - Create a pull request from `development` to `staging` titled "Release/mm/yy".
 
 ### Staging Fixes
 
@@ -53,7 +50,7 @@ Our workflow is based on Git Flow, with modifications to accommodate our environ
 ### Security Checks and Fixes
 
 1. **Preparing for Security Check**
-   - After staging validation, tag `staging` with `secCheck/Release/mm/yy` and prepare a release branch off `staging`.
+   - After staging validation, prepare a release branch off `staging`.
    - `git checkout -b Release/mm/yy`
 
 2. **Conducting Security Fixes**
